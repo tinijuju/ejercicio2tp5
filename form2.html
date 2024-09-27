@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="index.js" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Novell Services Login</legend>
+            
+            <label for="nombre">nombre</label><br>
+            <input type="text" name="nombreUsuario" id="nombre" required><br>
+            <label for="contra">contraseña</label><br>
+            <input type="password" name="pass" id="contra"><br>
+            <label for="ciudad">ciudad de empleo</label><br>
+            <input type="text" name="CiudadEmpleo" id="ciudad"><br>
+            
+            <label for="server">Web Server</label>
+            <select name="server">
+                <option value="">--Eliga un servidor--</option>
+                <option value="ser1">servidor 1</option>
+                <option value="ser2">servidor 2</option>
+                <option value="ser3">servidor 3</option>
+
+            <label>Por favor, especifique su rol</label><br>
+            
+            <input type="radio" name="rol" value="admin" id="administrador"><br>
+            <label for="administrador">administrador</label><br>
+            <input type="radio" name="rol" value="ing" id="ingeniero">
+            <label for="ingeniero">ingeniero</label> <br>
+            <input type="radio" name="rol" value="man" id="manager">
+            <label for="manager">manager</label> <br>
+            <input type="radio" name="rol" value="inv" id="invitada/o">
+            <label for="invitada/o">invitada/o</label> <br>
+
+            <label>Seleccione alguna de las opciones</label>
+            <input type="checkbox" name="recibir" value="si" id="recibir">
+            <label for="recibir">email</label><br>
+            <input type="checkbox" name="recibir" value="si" id="recibir">
+            <label for="recibir">payroll</label><br>
+            <input type="checkbox" name="recibir" value="si" id="recibir">
+            <label for="recibir">self services</label><br>
+
+            <input type="submit" name="enviar" value="Enviar datos">
+            <input type="reset" name="borrar" value="Borrar datos" disabled>
+    </form>
+</body>
+</html>
